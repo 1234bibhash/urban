@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com -->
+<!-- Last Published: Thu Sep 19 2024 02:17:53 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="urbannest-template.webflow.io" data-wf-page="66d55b24915cfc0b1e54785e" data-wf-site="66cd6125bd5f6e1e7dd9917e" lang="en" data-wf-locale="en" data-wf-collection="66d55b24915cfc0b1e5477f4" data-wf-item-slug="garden-nook">
+    <head>
+        <meta charset="utf-8"/>
+        <title>UrbanNest</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Webflow" name="generator"/>
+        <link href="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/css/urbannest-template.webflow.3317d1ed2.min.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+            !function(o, c) {
+                var n = c.documentElement
+                  , t = " w-mod-";
+                n.className += t + "js",
+                ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+            }(window, document);
+        </script>
+        <link href="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66e4b657bb1ded0adf5090e6_Urban%20Nest%20Favicon.png" rel="shortcut icon" type="image/x-icon"/>
+        <link href="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66e4b65a219fdfae87c0ecc4_Urban%20Nest%20Webclip.png" rel="apple-touch-icon"/>
+        <script type="text/javascript">
+            window.__WEBFLOW_CURRENCY_SETTINGS = {
+                "currencyCode": "USD",
+                "symbol": "$",
+                "decimal": ".",
+                "fractionDigits": 2,
+                "group": ",",
+                "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}",
+                "hideDecimalForWholeNumbers": false
+            };
+        </script>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div data-w-id="9c7d4d33-5289-acf8-82b5-ba0cedd9f846" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+                <div class="container">
+                    <div class="navbar-content">
+                        <a href="/index.html" class="brand w-nav-brand">
+                            <img src="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66cd726f16bd725b749f3d20_Logo.webp" loading="lazy" width="76.5" height="32" alt="Urban Nest"/>
+                        </a>
+                        <nav role="navigation" class="nav-menu w-nav-menu">
+                            <ul role="list" class="nav-list-frame w-list-unstyled">
+                                <li class="nav-list-item">
+                                    <a href="/index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="/properties.html" class="nav-link">Properties</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="/agents.html" class="nav-link">Find Agent</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="/shop.html" class="nav-link">Shop</a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <div data-hover="true" data-delay="0" class="dropdown w-dropdown">
+                                        <div class="dropdown-toggle w-dropdown-toggle">
+                                            <div>Pages</div>
+                                            <div class="dropdown-arrow w-icon-dropdown-toggle"></div>
+                                        </div>
+                                        <nav class="dropdown-list w-dropdown-list">
+                                            <div class="dropdown-links-wrapper">
+                                                <a href="/about.html" class="dropdown-link">About</a>
+                                                <a href="/works.html" class="dropdown-link">Works</a>
+                                                <a href="/insights.html" class="dropdown-link">Insights</a>
+                                                <a href="/apply-as-a-realtor.html" class="dropdown-link">Become A Realtor</a>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="/contact.html" class="nav-link">Contact</a>
+                                </li>
+                                <li class="nav-list-item visible-from-tablet">
+                                    <a data-w-id="cf61b630-9afe-b47f-05a7-fd062e18e7b5" href="/log-in" class="button w-inline-block">
+                                        <div>Sign in</div>
+                                        <div class="btn-arrow-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="button-arrow-icon">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5705 4H9.85617V5.71429H11.5705V7.42857H13.2847V9.14286H11.5705H9.85617H8.14188H6.42759H4.71331H2.99902V10.8571H4.71331H6.42759H8.14188H9.85617H11.5705H13.2847V12.5714H11.5705V14.2857H9.85617V16H11.5705V14.2857H13.2847V12.5714H14.999V10.8571H16.7133V9.14286H14.999V7.42857H13.2847V5.71429H11.5705V4Z" fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="navbar-left">
+                            <div data-open-product="" data-wf-cart-type="modal" data-wf-cart-query="query Dynamo2 {
+  database {
+    id
+    commerceOrder {
+      comment
+      extraItems {
+        name
+        pluginId
+        pluginName
+        price {
+          value
+          unit
+          decimalValue
+          string
+        }
+      }
+      id
+      startedOn
+      statusFlags {
+        hasDownloads
+        hasSubscription
+        isFreeOrder
+        requiresShipping
+      }
+      subtotal {
+        value
+        unit
+        decimalValue
+        string
+      }
+      total {
+        value
+        unit
+        decimalValue
+        string
+      }
+      updatedOn
+      userItems {
+        count
+        id
+        price {
+          value
+          unit
+          decimalValue
+          string
+        }
+        product {
+          id
+          cmsLocaleId
+          f__draft_0ht
+          f__archived_0ht
+          f_ec_product_type_2dr10dr {
+            id
+            name
+          }
+          f_name_
+          f_sku_properties_3dr {
+            id
+            name
+            enum {
+              id
+              name
+              slug
+            }
+          }
+        }
+        rowTotal {
+          value
+          unit
+          decimalValue
+          string
+        }
+        sku {
+          cmsLocaleId
+          f__draft_0ht
+          f__archived_0ht
+          f_main_image_4dr {
+            url
+            file {
+              size
+              origFileName
+              createdOn
+              updatedOn
+              mimeType
+              width
+              height
+              variants {
+                origFileName
+                quality
+                height
+                width
+                s3Url
+                error
+                size
+              }
+            }
+            alt
+          }
+          f_sku_values_3dr {
+            property {
+              id
+            }
+            value {
+              id
+            }
+          }
+          id
+        }
+        subscriptionFrequency
+        subscriptionInterval
+        subscriptionTrial
+      }
+      userItemsCount
+    }
+  }
+  site {
+    id
+    commerce {
+      businessAddress {
+        country
+      }
+      defaultCountry
+      defaultCurrency
+      quickCheckoutEnabled
+    }
+  }
+}" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart-main-wrap" data-node-type="commerce-cart-wrapper">
+                                <a class="w-commerce-commercecartopenlink cart-btn w-inline-block" role="button" aria-haspopup="dialog" aria-label="Open cart" data-node-type="commerce-cart-open-link" href="#">
+                                    <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItemsCount%22%7D%7D%5D" class="w-commerce-commercecartopenlinkcount cart-quantity">0</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none">
+                                        <path d="M2.5 4.99935H18.3333L15.8333 13.3327H5L2.5 4.99935ZM2.5 4.99935L1.875 2.91602" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M8.32812 9.16602H11.6615" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M9.16797 16.25C9.16797 16.9403 8.6083 17.5 7.91797 17.5C7.22761 17.5 6.66797 16.9403 6.66797 16.25" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M14.168 16.25C14.168 16.9403 13.6083 17.5 12.918 17.5C12.2276 17.5 11.668 16.9403 11.668 16.25" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                                <div style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal cart-wrapper" data-node-type="commerce-cart-container-wrapper">
+                                    <div data-node-type="commerce-cart-container" role="dialog" class="w-commerce-commercecartcontainer cart-container">
+                                        <div class="w-commerce-commercecartheader cart-header">
+                                            <h4 class="w-commerce-commercecartheading h5">Your Cart</h4>
+                                            <a class="w-commerce-commercecartcloselink cart-close-btn w-inline-block" role="button" aria-label="Close cart" data-node-type="commerce-cart-close-link">
+                                                <svg width="16px" height="16px" viewBox="0 0 16 16">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g fill-rule="nonzero" fill="#333333">
+                                                            <polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="w-commerce-commercecartformwrapper cart-form-wrapper">
+                                            <form style="display:none" class="w-commerce-commercecartform cart-default-state" data-node-type="commerce-cart-form">
+                                                <script type="text/x-wf-template" id="wf-template-cfbbce38-c7c5-a5f0-fb9c-931dc7a34ac2">
+                                                    %3Cdiv%20class%3D%22w-commerce-commercecartitem%20cart-item%22%3E%3Cimg%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20src%3D%22%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20cart-image%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%20cart-item-content-block%22%3E%3Cdiv%20class%3D%22cart-title-and-price%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22price-and-remove-block%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePrice%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522price%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.price%2522%257D%257D%255D%22%3E%24%C2%A00.00%C2%A0USD%3C%2Fdiv%3E%3Ca%20href%3D%22%23%22%20role%3D%22button%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%20aria-label%3D%22Remove%20item%20from%20cart%22%3E%3Cdiv%3ERemove%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cscript%20type%3D%22text%2Fx-wf-template%22%20id%3D%22wf-template-cfbbce38-c7c5-a5f0-fb9c-931dc7a34ac8%22%3E%253Cli%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522PlainText%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D.name%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253Cspan%253E%253A%2520%253C%252Fspan%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522CommercePropValues%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D%252522%25257D%25257D%25255D%2522%2520class%253D%2522w-dyn-bind-empty%2522%253E%253C%252Fspan%253E%253C%252Fli%253E%3C%2Fscript%3E%3Cul%20data-wf-bindings%3D%22%255B%257B%2522optionSets%2522%253A%257B%2522type%2522%253A%2522CommercePropTable%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%5B%5D%2522%257D%257D%252C%257B%2522optionValues%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_sku_values_3dr%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3D%22database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%22%20data-wf-template-id%3D%22wf-template-cfbbce38-c7c5-a5f0-fb9c-931dc7a34ac8%22%3E%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3C%2Ful%3E%3Cinput%20aria-label%3D%22Update%20quantity%22%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20data-wf-conditions%3D%22%257B%2522condition%2522%253A%257B%2522fields%2522%253A%257B%2522product%253Aec-product-type%2522%253A%257B%2522ne%2522%253A%2522e348fd487d0102946c9179d2a94bb613%2522%252C%2522type%2522%253A%2522Option%2522%257D%257D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D%2522%257D%22%20class%3D%22w-commerce-commercecartquantity%20cart-quantity-input%22%20required%3D%22%22%20pattern%3D%22%5E%5B0-9%5D%2B%24%22%20inputMode%3D%22numeric%22%20type%3D%22number%22%20name%3D%22quantity%22%20autoComplete%3D%22off%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E%3C%2Fdiv%3E
+                                                </script>
+                                                <div class="w-commerce-commercecartlist cart-list" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-cfbbce38-c7c5-a5f0-fb9c-931dc7a34ac2">
+                                                    <div class="w-commerce-commercecartitem cart-item">
+                                                        <img data-wf-bindings="%5B%7B%22src%22%3A%7B%22type%22%3A%22ImageRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_main_image_4dr%22%7D%7D%5D" src="" alt="" class="w-commerce-commercecartitemimage cart-image w-dyn-bind-empty"/>
+                                                        <div class="w-commerce-commercecartiteminfo cart-item-content-block">
+                                                            <div class="cart-title-and-price">
+                                                                <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_name_%22%7D%7D%5D" class="w-commerce-commercecartproductname w-dyn-bind-empty"></div>
+                                                                <div class="price-and-remove-block">
+                                                                    <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.price%22%7D%7D%5D">$ 0.00 USD</div>
+                                                                    <a href="#" role="button" data-wf-bindings="%5B%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D" class="w-inline-block" data-wf-cart-action="remove-item" data-commerce-sku-id="" aria-label="Remove item from cart">
+                                                                        <div>Remove</div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <script type="text/x-wf-template" id="wf-template-cfbbce38-c7c5-a5f0-fb9c-931dc7a34ac8">
+                                                                %3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%20class%3D%22w-dyn-bind-empty%22%3E%3C%2Fspan%3E%3C%2Fli%3E
+                                                            </script>
+                                                            <ul data-wf-bindings="%5B%7B%22optionSets%22%3A%7B%22type%22%3A%22CommercePropTable%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr[]%22%7D%7D%2C%7B%22optionValues%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_sku_values_3dr%22%7D%7D%5D" class="w-commerce-commercecartoptionlist" data-wf-collection="database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr" data-wf-template-id="wf-template-cfbbce38-c7c5-a5f0-fb9c-931dc7a34ac8">
+                                                                <li>
+                                                                    <span data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22PlainText%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D.name%22%7D%7D%5D" class="w-dyn-bind-empty"></span>
+                                                                    <span>: </span>
+                                                                    <span data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr%5B%5D%22%7D%7D%5D" class="w-dyn-bind-empty"></span>
+                                                                </li>
+                                                            </ul>
+                                                            <input aria-label="Update quantity" data-wf-bindings="%5B%7B%22value%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.count%22%7D%7D%2C%7B%22data-commerce-sku-id%22%3A%7B%22type%22%3A%22ItemRef%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.id%22%7D%7D%5D" data-wf-conditions="%7B%22condition%22%3A%7B%22fields%22%3A%7B%22product%3Aec-product-type%22%3A%7B%22ne%22%3A%22e348fd487d0102946c9179d2a94bb613%22%2C%22type%22%3A%22Option%22%7D%7D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D%22%7D" class="w-commerce-commercecartquantity cart-quantity-input" required="" pattern="^[0-9]+$" inputMode="numeric" type="number" name="quantity" autoComplete="off" data-wf-cart-action="update-item-quantity" data-commerce-sku-id="" value="1"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="w-commerce-commercecartfooter cart-footer">
+                                                    <div aria-atomic="true" aria-live="polite" class="w-commerce-commercecartlineitem">
+                                                        <div>Subtotal</div>
+                                                        <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22CommercePrice%22%2C%22filter%22%3A%7B%22type%22%3A%22price%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.subtotal%22%7D%7D%5D" class="w-commerce-commercecartordervalue"></div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="agent-card-btn">
+                                                            <div class="agent-card-btn-text">Continue to checkout</div>
+                                                            <a href="/checkout" value="Continue to Checkout" class="w-commerce-commercecartcheckoutbutton submit-btn" data-loading-text="Hang Tight..." data-node-type="cart-checkout-button">Continue to Checkout</a>
+                                                            <div class="agent-card-btn-arrow">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="svg-icon">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5714 4H9.85714V5.71429H11.5714V7.42857H13.2857V9.14286H11.5714H9.85714H8.14286H6.42857H4.71429H3V10.8571H4.71429H6.42857H8.14286H9.85714H11.5714H13.2857V12.5714H11.5714V14.2857H9.85714V16H11.5714V14.2857H13.2857V12.5714H15V10.8571H16.7143V9.14286H15V7.42857H13.2857V5.71429H11.5714V4Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="w-commerce-commercecartemptystate">
+                                                <div aria-label="This cart is empty" aria-live="polite">No items found.</div>
+                                            </div>
+                                            <div aria-live="assertive" style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate">
+                                                <div class="w-cart-error-msg" data-w-cart-quantity-error="Product is not available in this quantity." data-w-cart-general-error="Something went wrong when adding this item to the cart." data-w-cart-checkout-error="Checkout is disabled on this site." data-w-cart-cart_order_min-error="The order minimum was not met. Add more items to your cart to continue." data-w-cart-subscription_error-error="Before you purchase, please use your email invite to verify your address so we can send order updates.">Product is not available in this quantity.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hide-form-tablet">
+                                <a data-w-id="cf61b630-9afe-b47f-05a7-fd062e18e7b5" href="agents.html" class="button w-inline-block">
+                                    <div>Sign in</div>
+                                    <div class="btn-arrow-frame">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="button-arrow-icon">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5705 4H9.85617V5.71429H11.5705V7.42857H13.2847V9.14286H11.5705H9.85617H8.14188H6.42759H4.71331H2.99902V10.8571H4.71331H6.42759H8.14188H9.85617H11.5705H13.2847V12.5714H11.5705V14.2857H9.85617V16H11.5705V14.2857H13.2847V12.5714H14.999V10.8571H16.7133V9.14286H14.999V7.42857H13.2847V5.71429H11.5705V4Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="menu-button w-nav-button">
+                                <div class="menu-btn-inner">
+                                    <div class="open-text">Open</div>
+                                    <div class="close-text">Close</div>
+                                    <div class="menu-btn-icon-wrap">
+                                        <img src="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66d96a825a7033f055a3ecd6_Open%20Menu.webp" loading="lazy" width="20" height="20" alt="" class="menu-open-image"/>
+                                        <img src="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66d96a82bdbc8a802253b7d0_Close%20Menu.webp" loading="lazy" width="20" height="20" alt="" class="menu-close-image"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="main-wrapper">
+                <section class="section mix">
+                    <div data-delay="4000" data-animation="slide" class="property-slider-main w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                        <div class="property-slider-mask w-slider-mask">
+                            <div class="property-slide w-slide">
+                                <img src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40ef9b5bebfb7d63b64e1_Slider-Image-5.jpg" loading="lazy" alt="" class="property-slider-image"/>
+                            </div>
+                            <div class="property-slide w-slide">
+                                <img src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40eff03091f83e353895b_Slider-Image-6.jpg" loading="lazy" alt="" class="property-slider-image"/>
+                            </div>
+                            <div class="property-slide w-slide">
+                                <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40b0203091f83e34f2b46_Slider-Image-2.jpg" alt="" class="property-slider-image"/>
+                            </div>
+                        </div>
+                        <div class="property-slider-arrow left w-slider-arrow-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="property-slider-arrow-icon">
+                                <path d="M14 7.99998H2M2 7.99998L7.66667 2.33331M2 7.99998L7.66667 13.6666" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="property-slider-arrow w-slider-arrow-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 16 16" fill="none" class="property-slider-arrow-icon">
+                                <path d="M2 7.99998H14M14 7.99998L8.33333 2.33331M14 7.99998L8.33333 13.6666" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="property-slider-nav w-slider-nav w-round w-num"></div>
+                    </div>
+                    <div class="property-inner-section">
+                        <div class="container">
+                            <div class="w-layout-grid details-page-grid">
+                                <div id="w-node-_4b6290e8-58d1-915f-031b-72d07980f94a-1e54785e" class="details-page-left">
+                                    <div class="property-top-frame">
+                                        <div class="property-card-location-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="svg-icon">
+                                                <path d="M16.6666 8.35392C16.6666 12.0358 9.99998 18.3539 9.99998 18.3539C9.99998 18.3539 3.33331 12.0358 3.33331 8.35392C3.33331 4.67202 6.31808 1.68726 9.99998 1.68726C13.6819 1.68726 16.6666 4.67202 16.6666 8.35392Z" stroke="currentColor" stroke-width="1.25"></path>
+                                                <path d="M9.99996 9.18717C10.4602 9.18717 10.8333 8.81409 10.8333 8.35384C10.8333 7.89361 10.4602 7.52051 9.99996 7.52051C9.53971 7.52051 9.16663 7.89361 9.16663 8.35384C9.16663 8.81409 9.53971 9.18717 9.99996 9.18717Z" fill="currentColor" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <div>Alaska</div>
+                                        </div>
+                                        <a href="contact.html" class="underline-link">View on map</a>
+                                    </div>
+                                    <h1 class="h2">Garden Nook</h1>
+                                    <div class="property-price-sale-frame">
+                                        <div class="h3">$22,500</div>
+                                        <div class="badge">
+                                            <div class="on-sale-point"></div>
+                                            <div>On sale</div>
+                                        </div>
+                                    </div>
+                                    <div class="property-meta-info-frame">
+                                        <div class="property-info-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 25" fill="none" class="svg-icon">
+                                                <path d="M1.99997 16.0205V18.0205" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M3.99997 9.02051V7.02051C3.99997 5.91594 4.8954 5.02051 5.99997 5.02051H18C19.1046 5.02051 20 5.91594 20 7.02051V9.02051" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M20 9.02051C18.8954 9.02051 18 9.91594 18 11.0205V13.0205H5.99997V11.0205C5.99997 9.91594 5.10454 9.02051 3.99997 9.02051C2.8954 9.02051 1.99997 9.91594 1.99997 11.0205V17.0205H22V11.0205C22 9.91594 21.1046 9.02051 20 9.02051Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M22 16.0205V18.0205" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <div class="property-info-inner-frame">
+                                                <div>3</div>
+                                                <div>Bed</div>
+                                            </div>
+                                        </div>
+                                        <div class="property-info-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 25 25" fill="none" class="svg-icon">
+                                                <path d="M21.8889 13.0205V16.0205C21.8889 18.2296 20.098 20.0205 17.8889 20.0205H7.88885C5.67971 20.0205 3.88885 18.2296 3.88885 16.0205V13.6205C3.88885 13.2891 4.15748 13.0205 4.48885 13.0205H21.8889Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M16.8889 20.0205L17.8889 22.0205" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M8.88885 20.0205L7.88885 22.0205" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M21.8889 13.0205V7.02051C21.8889 4.81137 20.098 3.02051 17.8889 3.02051H12.8889" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M16.2889 8.02051H9.48889C9.15751 8.02051 8.89279 7.75221 8.92905 7.42281C9.0751 6.0959 9.75198 3.02051 12.8889 3.02051C16.0258 3.02051 16.7027 6.0959 16.8487 7.42281C16.885 7.7522 16.6203 8.02051 16.2889 8.02051Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <div class="property-info-inner-frame">
+                                                <div>2</div>
+                                                <div>Bath</div>
+                                            </div>
+                                        </div>
+                                        <div class="property-info-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 21 21" fill="none" class="svg-icon">
+                                                <g clip-path="url(#clip0_12195_448)">
+                                                    <path d="M1.61102 17.5205L4.23007 2.52051H17.3253L19.9444 17.5205H1.61102Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M2.4444 13.7705H19.1111" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M3.27771 10.0205H18.2777" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4.11102 6.27051H17.4444" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M10.7777 2.52051V17.5205" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M7.4444 2.93726L6.1944 17.1039" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M14.111 2.93726L15.361 17.1039" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_12195_448">
+                                                        <rect width="20" height="20" fill="currentColor" transform="translate(0.77771 0.0205078)"></rect>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <div>2200sqft.</div>
+                                        </div>
+                                        <div id="w-node-_4b6290e8-58d1-915f-031b-72d07980f984-1e54785e" class="property-info-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="svg-icon">
+                                                <path d="M5.83301 7.50828L5.84134 7.49902" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9.16699 7.50828L9.17533 7.49902" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M5.83301 10.8416L5.84134 10.8324" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9.16699 10.8416L9.17533 10.8324" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M5.83301 14.175L5.84134 14.1658" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9.16699 14.175L9.17533 14.1658" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M12.5 17.5H3C2.72386 17.5 2.5 17.2762 2.5 17V4.66667C2.5 4.39052 2.72386 4.16667 3 4.16667H7.5V3C7.5 2.72386 7.72386 2.5 8 2.5H12C12.2762 2.5 12.5 2.72386 12.5 3V7.5M12.5 17.5H17C17.2762 17.5 17.5 17.2762 17.5 17V8C17.5 7.72386 17.2762 7.5 17 7.5H12.5M12.5 17.5V14.1667M12.5 7.5V10.8333M12.5 14.1667V10.8333M12.5 14.1667H14.1667M12.5 10.8333H14.1667" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <div>Family residence</div>
+                                        </div>
+                                        <div id="w-node-_4b6290e8-58d1-915f-031b-72d07980f98f-1e54785e" class="property-info-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="svg-icon">
+                                                <path d="M9.16667 13.3333V9.16663H2.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M17.5 6.66663H12.5V8.33329" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M12.5 15V17.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9.16699 15.8334V17.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9.16699 2.5V5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M17.5 12.5H12.5V10.8334" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M9.16699 7.5V9.16667" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M17.5 3V17C17.5 17.2762 17.2762 17.5 17 17.5H3C2.72386 17.5 2.5 17.2762 2.5 17V3C2.5 2.72386 2.72386 2.5 3 2.5H17C17.2762 2.5 17.5 2.72386 17.5 3Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <div>2000sqft.</div>
+                                        </div>
+                                        <div id="w-node-_4b6290e8-58d1-915f-031b-72d07980f99b-1e54785e" class="property-info-frame">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="svg-icon">
+                                                <path d="M5 16.6667H2.5V5.00004L10 3.33337L17.5 5.00004V16.6667H15M5 16.6667H15M5 16.6667V13.3334M15 16.6667V13.3334M5 13.3334V10M5 13.3334H15M15 13.3334V10M5 10V6.66671H15V10M5 10H15" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <div>Parking</div>
+                                        </div>
+                                    </div>
+                                    <div class="w-richtext">
+                                        <p>Welcome to your dream home in the heart of St. Petersburg! This meticulously renovated gem boasts 3 spacious bedrooms and 2 stylish bathrooms, offering a perfect blend of comfort and modern elegance. From the moment you step inside, you &#x27;ll be greeted by a bright and airy open floor plan, adorned with tasteful upgrades throughout. The inviting living area features sleek floors and fresh, neutral paint, creating a warm and welcoming ambiance. </p>
+                                        <p>‍</p>
+                                        <p>The open kitchen is a chef &#x27;s delight, equipped with renovated cabinetry, and countertops. The master suite is a true retreat, complete with a luxurious en-suite bathroom featuring a walk-in shower with contemporary fixtures, and a spacious walk-in closet. The additional bedrooms are thoughtfully designed, offering plenty of natural light and ample closet space. Step outside to your private backyard oasis, perfect for entertaining or relaxing in tranquility. </p>
+                                        <p>‍</p>
+                                        <p>The outdoor space is complete with lush landscaping, and plenty of room for a garden or play area. Located in a charming neighborhood with easy access to local shops, dining, and beautiful parks, this home combines modern convenience with classic charm. Don’t miss the opportunity to make this exceptional property your own!</p>
+                                    </div>
+                                    <div data-hover="false" data-delay="0" data-w-id="4b6290e8-58d1-915f-031b-72d07980f9c0" class="property-dropdown w-dropdown">
+                                        <div class="property-dropdown-toggle w-dropdown-toggle">
+                                            <div class="h5">Floor plan</div>
+                                            <div class="property-dropdown-icon-block">
+                                                <div style="opacity:0;display:none" class="hide-text">Hide</div>
+                                                <div style="display:block;opacity:1" class="show-text">Show</div>
+                                                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="toggle-arrow w-icon-dropdown-toggle"></div>
+                                            </div>
+                                        </div>
+                                        <nav style="height:0px" class="property-dropdown-content-block w-dropdown-list">
+                                            <div class="property-dropdown-content">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40b2a3f16fc3af8386ad4_Floor-plan-1.png" alt="" class="floor-plan-image"/>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div data-hover="false" data-delay="0" data-w-id="4b6290e8-58d1-915f-031b-72d07980f9cd" class="property-dropdown w-dropdown">
+                                        <div class="property-dropdown-toggle w-dropdown-toggle">
+                                            <div class="h5">Interior</div>
+                                            <div class="property-dropdown-icon-block">
+                                                <div style="opacity:0;display:none" class="hide-text">Hide</div>
+                                                <div style="display:block;opacity:1" class="show-text">Show</div>
+                                                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="toggle-arrow w-icon-dropdown-toggle"></div>
+                                            </div>
+                                        </div>
+                                        <nav style="height:0px" class="property-dropdown-content-block w-dropdown-list">
+                                            <div class="property-dropdown-content">
+                                                <div class="property-interior-grid">
+                                                    <img loading="lazy" id="w-node-_4b6290e8-58d1-915f-031b-72d07980f9da-1e54785e" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40c7d5137139f75718bda_Interior-1.png" alt="" class="interior-image"/>
+                                                    <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40c82c2286b9bdd56d996_Interior-2.png" alt="" class="interior-image"/>
+                                                    <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40c86a457cbb2fddda3bd_Interior-3.png" alt="" class="interior-image"/>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div data-hover="false" data-delay="0" data-w-id="4b6290e8-58d1-915f-031b-72d07980f9dd" class="property-dropdown w-dropdown">
+                                        <div class="property-dropdown-toggle w-dropdown-toggle">
+                                            <div class="h5">Exterior</div>
+                                            <div class="property-dropdown-icon-block">
+                                                <div style="opacity:0;display:none" class="hide-text">Hide</div>
+                                                <div style="display:block;opacity:1" class="show-text">Show</div>
+                                                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="toggle-arrow w-icon-dropdown-toggle"></div>
+                                            </div>
+                                        </div>
+                                        <nav style="height:0px" class="property-dropdown-content-block w-dropdown-list">
+                                            <div class="property-dropdown-content">
+                                                <div class="property-interior-grid">
+                                                    <img loading="lazy" id="w-node-_4b6290e8-58d1-915f-031b-72d07980f9ea-1e54785e" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40c8c6f58536866a26c55_Exterior-1.jpg" alt="" class="interior-image"/>
+                                                    <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40c910716d8c957598b25_Exterior-2.jpg" alt="" class="interior-image"/>
+                                                    <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40c949e923ea6701825c9_Exterior-3.jpg" alt="" class="interior-image"/>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div data-hover="false" data-delay="0" data-w-id="4b6290e8-58d1-915f-031b-72d07980f9ed" class="property-dropdown w-dropdown">
+                                        <div class="property-dropdown-toggle w-dropdown-toggle">
+                                            <div class="h5">Useful Information</div>
+                                            <div class="property-dropdown-icon-block">
+                                                <div style="opacity:0;display:none" class="hide-text">Hide</div>
+                                                <div style="display:block;opacity:1" class="show-text">Show</div>
+                                                <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" class="toggle-arrow w-icon-dropdown-toggle"></div>
+                                            </div>
+                                        </div>
+                                        <nav style="height:0px" class="property-dropdown-content-block w-dropdown-list">
+                                            <div class="useful-information-grid">
+                                                <div id="w-node-_4b6290e8-58d1-915f-031b-72d07980f9f9-1e54785e" class="useful-info-left">
+                                                    <div class="w-richtext">
+                                                        <p>Welcome to your dream home in the heart of St. Petersburg! This meticulously renovated gem boasts 3 spacious bedrooms and 2 stylish bathrooms, offering a perfect blend of comfort and modern elegance.</p>
+                                                        <p>‍</p>
+                                                        <p>This property not only offers a wonderful living space but also represents a solid investment opportunity. The real estate market in [City Name] has seen consistent growth, making this home a wise choice for buyers looking to build equity. With its prime location and desirable features, the property has strong rental potential and could serve as an excellent addition to an investment portfolio. Whether you &#x27;re a first-time homebuyer or a seasoned investor, this home is a smart and attractive option.</p>
+                                                        <p>‍</p>
+                                                        <p>An investment portfolio. Whether you &#x27;re a first-time homebuyer or a seasoned investor, this home is a smart and attractive option.</p>
+                                                    </div>
+                                                </div>
+                                                <div id="w-node-_4b6290e8-58d1-915f-031b-72d07980fa06-1e54785e" class="useful-info-right">
+                                                    <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40c9f5bac0eeb47ab05c1_Useful-image-1.png" alt="" class="useful-info-image"/>
+                                                    <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d40ca48fa4a872b55f90a4_Useful-image-2.png" alt="" class="useful-info-image"/>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div id="w-node-_4b6290e8-58d1-915f-031b-72d07980fa09-1e54785e" class="details-page-right">
+                                    <div class="agent-sidebar">
+                                        <div class="agent-sidebar-top">
+                                            <img loading="lazy" src="https://cdn.prod.website-files.com/66d28473a7d6ca32572f8fed/66d2c3ca2c52082d37ca2bce_Agent%20-%207.png" alt="" class="agent-image"/>
+                                            <div class="agent-top-right">
+                                                <div class="agent-rating">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="star">
+                                                        <path d="M9.55163 2.90849C9.73504 2.53687 10.265 2.53687 10.4484 2.90849L12.2348 6.52821C12.3076 6.67578 12.4484 6.77807 12.6113 6.80173L16.6059 7.38218C17.016 7.44177 17.1797 7.94576 16.883 8.23503L13.9925 11.0526C13.8746 11.1675 13.8208 11.333 13.8487 11.4952L14.531 15.4736C14.6011 15.8821 14.1724 16.1935 13.8055 16.0007L10.2327 14.1223C10.087 14.0457 9.91299 14.0457 9.76733 14.1223L6.19445 16.0007C5.82764 16.1935 5.39892 15.8821 5.46898 15.4736L6.15134 11.4951C6.17916 11.333 6.12538 11.1675 6.00754 11.0526L3.11702 8.23503C2.82026 7.94576 2.98402 7.44177 3.39413 7.38218L7.38873 6.80173C7.55158 6.77807 7.69236 6.67578 7.76519 6.52821L9.55163 2.90849Z" fill="currentColor"></path>
+                                                    </svg>
+                                                    <div class="base-paragraph semibold-black">4.5</div>
+                                                </div>
+                                                <a data-w-id="4b6290e8-58d1-915f-031b-72d07980fa13" href="/agents.html" class="button w-inline-block">
+                                                    <div>Contact</div>
+                                                    <div class="btn-arrow-frame">
+                                                        <svg style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="button-arrow-icon">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5705 4H9.85617V5.71429H11.5705V7.42857H13.2847V9.14286H11.5705H9.85617H8.14188H6.42759H4.71331H2.99902V10.8571H4.71331H6.42759H8.14188H9.85617H11.5705H13.2847V12.5714H11.5705V14.2857H9.85617V16H11.5705V14.2857H13.2847V12.5714H14.999V10.8571H16.7133V9.14286H14.999V7.42857H13.2847V5.71429H11.5705V4Z" fill="currentColor"></path>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="agent-name-designation">
+                                            <div>Listed by</div>
+                                            <div class="h5">Reyansh Bose</div>
+                                        </div>
+                                    </div>
+                                    <div class="request-property-block">
+                                        <div class="request-property-top">
+                                            <div class="h4">Request a property tour!</div>
+                                            <p>Ready to find your dream home? Book a personal tour today and explore your future oasis!</p>
+                                        </div>
+                                        <a data-w-id="cf61b630-9afe-b47f-05a7-fd062e18e7b5" href="/contact.html" class="button w-inline-block">
+                                            <div>Schedule a tour</div>
+                                            <div class="btn-arrow-frame">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="button-arrow-icon">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5705 4H9.85617V5.71429H11.5705V7.42857H13.2847V9.14286H11.5705H9.85617H8.14188H6.42759H4.71331H2.99902V10.8571H4.71331H6.42759H8.14188H9.85617H11.5705H13.2847V12.5714H11.5705V14.2857H9.85617V16H11.5705V14.2857H13.2847V12.5714H14.999V10.8571H16.7133V9.14286H14.999V7.42857H13.2847V5.71429H11.5705V4Z" fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <div class="request-property-bottom">
+                                            <a href="/contact.html" class="underline-link">Get Direction</a>
+                                            <img src="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66d414fb19c7333d69e16883_Direction.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, 94vw" srcset="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66d414fb19c7333d69e16883_Direction-p-500.webp 500w, https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66d414fb19c7333d69e16883_Direction.webp 560w" alt="" class="direction-map"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section faq-section">
+                    <div class="container">
+                        <div class="w-layout-grid home-faq-grid">
+                            <div id="w-node-_3ced2856-b95e-0634-7fd2-b1ad83978602-839785ff" data-w-id="3ced2856-b95e-0634-7fd2-b1ad83978602" class="home-faq-left">
+                                <h2 class="h2">Frequently asked question?</h2>
+                                <div class="faq-cta-frame">
+                                    <div>Still have a question?</div>
+                                    <a data-w-id="3ced2856-b95e-0634-7fd2-b1ad83978608" href="/contact" class="contact-us w-inline-block">
+                                        <div class="contact-btn-text">Contact us</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="svg-icon">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.82553 4.56555L5.61335 5.77773L6.82553 6.98992L8.03772 5.77773L9.2499 6.98992L10.4621 5.77773L11.6743 6.98992L10.4621 8.2021L9.2499 9.41428L8.03772 10.6265L6.82553 11.8386L5.61335 13.0508L4.40117 14.263L5.61335 15.4752L6.82553 14.263L8.03772 13.0508L9.2499 11.8386L10.4621 10.6265L11.6743 9.41428L12.8864 8.2021L14.0986 9.41428L12.8864 10.6265L14.0986 11.8386L12.8864 13.0508L14.0986 14.263L15.3108 13.0508L14.0986 11.8386L15.3108 10.6265L14.0986 9.41428L15.3108 8.2021L14.0986 6.98992L15.3108 5.77773L14.0986 4.56555L12.8864 5.77773L11.6743 4.56555L10.4621 5.77773L9.2499 4.56555L8.03772 5.77773L6.82553 4.56555Z" fill="currentColor"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="w-node-_3ced2856-b95e-0634-7fd2-b1ad8397860d-839785ff" data-w-id="3ced2856-b95e-0634-7fd2-b1ad8397860d" class="home-faq-right">
+                                <div data-delay="0" data-hover="false" data-w-id="3ced2856-b95e-0634-7fd2-b1ad8397860e" class="faq first w-dropdown">
+                                    <div class="faq-toggle w-dropdown-toggle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="svg-icon">
+                                            <g clip-path="url(#clip0_12494_843)">
+                                                <path d="M11.4142 1.5148L10 0.100586L8.58579 1.5148L10 2.92901L8.58579 4.34323L10 5.75744L8.58579 7.17165L10 8.58587L8.58579 10.0001L7.17157 8.58587L5.75736 10.0001L4.34315 8.58587L2.92893 10.0001L1.51472 8.58587L0.100505 10.0001L1.51472 11.4143L2.92893 10.0001L4.34315 11.4143L5.75736 10.0001L7.17157 11.4143L8.58579 10.0001L10 11.4143L8.58579 12.8285L10 14.2427L8.58579 15.6569L10 17.0711L8.58579 18.4854L10 19.8996L11.4142 18.4854L10 17.0711L11.4142 15.6569L10 14.2427L11.4142 12.8285L10 11.4143L11.4142 10.0001L12.8284 11.4143L14.2426 10.0001L15.6569 11.4143L17.0711 10.0001L18.4853 11.4143L19.8995 10.0001L18.4853 8.58587L17.0711 10.0001L15.6569 8.58587L14.2426 10.0001L12.8284 8.58587L11.4142 10.0001L10 8.58587L11.4142 7.17165L10 5.75744L11.4142 4.34323L10 2.92901L11.4142 1.5148Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_12494_843">
+                                                    <rect width="20" height="20" fill="currentColor" transform="translate(0 0.0205078)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="h5">What types of properties does Urbanest offer?</div>
+                                    </div>
+                                    <nav class="faq-content-frame w-dropdown-list">
+                                        <div class="faq-content">
+                                            <p>Urbanest offers a wide range of modern, eco-friendly urban living spaces, including apartments, townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you’re a single professional, a couple, or a family looking for a sustainable home in the heart of the city</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <div data-hover="false" data-delay="0" data-w-id="d67a6a44-c80c-f3d2-629c-5bbbacb18e8e" class="faq w-dropdown">
+                                    <div class="faq-toggle w-dropdown-toggle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="svg-icon">
+                                            <g clip-path="url(#clip0_12494_843)">
+                                                <path d="M11.4142 1.5148L10 0.100586L8.58579 1.5148L10 2.92901L8.58579 4.34323L10 5.75744L8.58579 7.17165L10 8.58587L8.58579 10.0001L7.17157 8.58587L5.75736 10.0001L4.34315 8.58587L2.92893 10.0001L1.51472 8.58587L0.100505 10.0001L1.51472 11.4143L2.92893 10.0001L4.34315 11.4143L5.75736 10.0001L7.17157 11.4143L8.58579 10.0001L10 11.4143L8.58579 12.8285L10 14.2427L8.58579 15.6569L10 17.0711L8.58579 18.4854L10 19.8996L11.4142 18.4854L10 17.0711L11.4142 15.6569L10 14.2427L11.4142 12.8285L10 11.4143L11.4142 10.0001L12.8284 11.4143L14.2426 10.0001L15.6569 11.4143L17.0711 10.0001L18.4853 11.4143L19.8995 10.0001L18.4853 8.58587L17.0711 10.0001L15.6569 8.58587L14.2426 10.0001L12.8284 8.58587L11.4142 10.0001L10 8.58587L11.4142 7.17165L10 5.75744L11.4142 4.34323L10 2.92901L11.4142 1.5148Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_12494_843">
+                                                    <rect width="20" height="20" fill="currentColor" transform="translate(0 0.0205078)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="h5">How do I schedule a property tour?</div>
+                                    </div>
+                                    <nav class="faq-content-frame w-dropdown-list">
+                                        <div class="faq-content">
+                                            <p>Urbanest offers a wide range of modern, eco-friendly urban living spaces, including apartments, townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you’re a single professional, a couple, or a family looking for a sustainable home in the heart of the city</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <div data-hover="false" data-delay="0" data-w-id="d67a6a44-c80c-f3d2-629c-5bbbacb18e8e" class="faq w-dropdown">
+                                    <div class="faq-toggle w-dropdown-toggle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="svg-icon">
+                                            <g clip-path="url(#clip0_12494_843)">
+                                                <path d="M11.4142 1.5148L10 0.100586L8.58579 1.5148L10 2.92901L8.58579 4.34323L10 5.75744L8.58579 7.17165L10 8.58587L8.58579 10.0001L7.17157 8.58587L5.75736 10.0001L4.34315 8.58587L2.92893 10.0001L1.51472 8.58587L0.100505 10.0001L1.51472 11.4143L2.92893 10.0001L4.34315 11.4143L5.75736 10.0001L7.17157 11.4143L8.58579 10.0001L10 11.4143L8.58579 12.8285L10 14.2427L8.58579 15.6569L10 17.0711L8.58579 18.4854L10 19.8996L11.4142 18.4854L10 17.0711L11.4142 15.6569L10 14.2427L11.4142 12.8285L10 11.4143L11.4142 10.0001L12.8284 11.4143L14.2426 10.0001L15.6569 11.4143L17.0711 10.0001L18.4853 11.4143L19.8995 10.0001L18.4853 8.58587L17.0711 10.0001L15.6569 8.58587L14.2426 10.0001L12.8284 8.58587L11.4142 10.0001L10 8.58587L11.4142 7.17165L10 5.75744L11.4142 4.34323L10 2.92901L11.4142 1.5148Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_12494_843">
+                                                    <rect width="20" height="20" fill="currentColor" transform="translate(0 0.0205078)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="h5">Are Urbanest homes pet-friendly?</div>
+                                    </div>
+                                    <nav class="faq-content-frame w-dropdown-list">
+                                        <div class="faq-content">
+                                            <p>Urbanest offers a wide range of modern, eco-friendly urban living spaces, including apartments, townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you’re a single professional, a couple, or a family looking for a sustainable home in the heart of the city</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <div data-hover="false" data-delay="0" data-w-id="d67a6a44-c80c-f3d2-629c-5bbbacb18e8e" class="faq w-dropdown">
+                                    <div class="faq-toggle w-dropdown-toggle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="svg-icon">
+                                            <g clip-path="url(#clip0_12494_843)">
+                                                <path d="M11.4142 1.5148L10 0.100586L8.58579 1.5148L10 2.92901L8.58579 4.34323L10 5.75744L8.58579 7.17165L10 8.58587L8.58579 10.0001L7.17157 8.58587L5.75736 10.0001L4.34315 8.58587L2.92893 10.0001L1.51472 8.58587L0.100505 10.0001L1.51472 11.4143L2.92893 10.0001L4.34315 11.4143L5.75736 10.0001L7.17157 11.4143L8.58579 10.0001L10 11.4143L8.58579 12.8285L10 14.2427L8.58579 15.6569L10 17.0711L8.58579 18.4854L10 19.8996L11.4142 18.4854L10 17.0711L11.4142 15.6569L10 14.2427L11.4142 12.8285L10 11.4143L11.4142 10.0001L12.8284 11.4143L14.2426 10.0001L15.6569 11.4143L17.0711 10.0001L18.4853 11.4143L19.8995 10.0001L18.4853 8.58587L17.0711 10.0001L15.6569 8.58587L14.2426 10.0001L12.8284 8.58587L11.4142 10.0001L10 8.58587L11.4142 7.17165L10 5.75744L11.4142 4.34323L10 2.92901L11.4142 1.5148Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_12494_843">
+                                                    <rect width="20" height="20" fill="currentColor" transform="translate(0 0.0205078)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="h5">How do I get started with Urbanest?</div>
+                                    </div>
+                                    <nav class="faq-content-frame w-dropdown-list">
+                                        <div class="faq-content">
+                                            <p>Urbanest offers a wide range of modern, eco-friendly urban living spaces, including apartments, townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you’re a single professional, a couple, or a family looking for a sustainable home in the heart of the city</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <div data-hover="false" data-delay="0" data-w-id="d67a6a44-c80c-f3d2-629c-5bbbacb18e8e" class="faq w-dropdown">
+                                    <div class="faq-toggle w-dropdown-toggle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="svg-icon">
+                                            <g clip-path="url(#clip0_12494_843)">
+                                                <path d="M11.4142 1.5148L10 0.100586L8.58579 1.5148L10 2.92901L8.58579 4.34323L10 5.75744L8.58579 7.17165L10 8.58587L8.58579 10.0001L7.17157 8.58587L5.75736 10.0001L4.34315 8.58587L2.92893 10.0001L1.51472 8.58587L0.100505 10.0001L1.51472 11.4143L2.92893 10.0001L4.34315 11.4143L5.75736 10.0001L7.17157 11.4143L8.58579 10.0001L10 11.4143L8.58579 12.8285L10 14.2427L8.58579 15.6569L10 17.0711L8.58579 18.4854L10 19.8996L11.4142 18.4854L10 17.0711L11.4142 15.6569L10 14.2427L11.4142 12.8285L10 11.4143L11.4142 10.0001L12.8284 11.4143L14.2426 10.0001L15.6569 11.4143L17.0711 10.0001L18.4853 11.4143L19.8995 10.0001L18.4853 8.58587L17.0711 10.0001L15.6569 8.58587L14.2426 10.0001L12.8284 8.58587L11.4142 10.0001L10 8.58587L11.4142 7.17165L10 5.75744L11.4142 4.34323L10 2.92901L11.4142 1.5148Z" fill="currentColor"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_12494_843">
+                                                    <rect width="20" height="20" fill="currentColor" transform="translate(0 0.0205078)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="h5">Can I rent an Urbanest property instead of purchasing?</div>
+                                    </div>
+                                    <nav class="faq-content-frame w-dropdown-list">
+                                        <div class="faq-content">
+                                            <p>Urbanest offers a wide range of modern, eco-friendly urban living spaces, including apartments, townhouses, and lofts. Our properties are designed to suit different lifestyles, whether you’re a single professional, a couple, or a family looking for a sustainable home in the heart of the city</p>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer-frame">
+                    <div data-w-id="07c57a42-a242-fa68-709a-776514e93ab6" class="w-layout-grid footer-grid">
+                        <div id="w-node-_07c57a42-a242-fa68-709a-776514e93ab7-14e93ab3" class="footer-left-col">
+                            <a href="/index.html" class="footer-brand w-inline-block">
+                                <img src="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66cd787e239e735499a4f466_Footer-Logo.webp" loading="lazy" width="95.5" height="40" alt="Footer Logo Urban Nest"/>
+                            </a>
+                            <div class="footer-description-frame">
+                                <p class="small-paragraph">© UrbanNest dedicated to revolutionizing the real estate experience. Through innovation and excellence</p>
+                            </div>
+                            <img src="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/66cd787eff7ce767c23d1a92_Flower-Vector.webp" loading="lazy" width="24" height="24" alt=""/>
+                        </div>
+                        <div id="w-node-_07c57a42-a242-fa68-709a-776514e93abe-14e93ab3" class="footer-right-col">
+                            <div class="footer-inner-col">
+                                <div class="base-paragraph semibold">Contact</div>
+                                <div class="footer-links-frame">
+                                    <p class="small-paragraph medium-white">123 Mockingbird Lane Springfield, Anytown 12345, United States</p>
+                                    <div class="contact-link-wrapper">
+                                        <a href="#" class="contact-link">info@urban-nest.com</a>
+                                        <a href="#" class="contact-link">555-123-4567</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="w-node-_07c57a42-a242-fa68-709a-776514e93ada-14e93ab3" class="footer-inner-col">
+                                <div class="base-paragraph semibold">Socials</div>
+                                <div class="footer-links-frame">
+                                    <a href="https://webflow.com/" target="_blank" class="footer-link">Facebook</a>
+                                    <a href="https://webflow.com/" target="_blank" class="footer-link">Instagram</a>
+                                    <a href="https://webflow.com/" target="_blank" class="footer-link">Linkedin</a>
+                                    <a href="https://webflow.com/" target="_blank" class="footer-link">Clutch</a>
+                                    <a href="https://webflow.com/" target="_blank" class="footer-link">Trustpilot</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-w-id="07c57a42-a242-fa68-709a-776514e93ae8" class="footer-text-main-frame">
+                        <div class="footer-text-frame">
+                            <div class="big-text">GET IN TOUCH</div>
+                            <div class="footer-text-divider"></div>
+                            <div class="big-text">GET IN TOUCH</div>
+                        </div>
+                        <div class="footer-text-frame">
+                            <div class="big-text">GET IN TOUCH</div>
+                            <div class="footer-text-divider"></div>
+                            <div class="big-text">GET IN TOUCH</div>
+                        </div>
+                    </div>
+                    <div data-w-id="07c57a42-a242-fa68-709a-776514e93af5" class="footer-bottom-block">
+                        <div>
+                            <div class="small-paragraph">All Rights Reserved.</div>
+                            <div class="small-paragraph">
+                                Designed by <a href="https://strattonone.in" target="_blank" class="footer-link">StrattonOne</a>
+                            </div>
+                        </div>
+                        <div class="privacy-policy-cookies-frame">
+                            <a href="https://strattonone.in/legal" class="privacy-policy">Privacy Policy   |</a>
+                            <a href="https://strattonone.in/cookies" class="privacy-policy">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66cd6125bd5f6e1e7dd9917e" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.prod.website-files.com/66cd6125bd5f6e1e7dd9917e/js/webflow.a37f5ccb1.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {$(".w-webflow-badge").removeClass("w-webflow-badge").empty(); });
+        </script>
+    </body>
+</html>
